@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Black And White Picture';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/TwMe-JAERlQd3ooUHBUXGmrmioKjjnRSFO-NqL5AZ8c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url(../fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/KFOlCnqEu92Fr1MmYUtfBBc9.ttf) format('truetype');
+}
