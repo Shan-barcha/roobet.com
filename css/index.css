@@ -2942,15 +2942,17 @@
       .roo256 {
         color: #b4a6e2;
       }
-      /* .roo257 {
-        background: #2c2852 !important;
-        font-family: Roboto !important;
-      } */
+     
       .roo258 {
         font-family: Roboto !important;
       }
       .roo258.Mui-selected {
         font-weight: 700 !important;
+      }
+      @media (max-width: 600px){
+        .roo258{
+          position: unset;
+        }
       }
       .roo259 {
         display: flex;
@@ -3032,7 +3034,7 @@
     border-radius: 0px 8px 0px 0px;
 }
       }
-      @media (min-width: 600px){
+      
 
 .roo267 > span:before {
     top: 0;
@@ -4732,12 +4734,12 @@
         background-position: center center;
         height: 147px;
       }
-      @media (min-width: 600px) {
+      @media (min-width: 1024px) {
         .roo159 {
            display: none;
           }
       }
-      @media (max-width: 600px) {
+      @media (max-width: 1023px) {
         .roo253 {
            display: none;
           }
