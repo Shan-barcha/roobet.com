@@ -5,6 +5,14 @@
     width: 159px;
     margin-right: 12px;
     }
+    @media (max-width: 560px){
+      .roo193{
+        opacity: 1;
+      /* width: 265px; */
+      width: 111px;
+      margin-right: 8px;
+      }
+    }
     .roo253{
     border: 0;
     margin: 0;
