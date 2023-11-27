@@ -1,3 +1,4 @@
+
 /* <style> */
     .roo193{
       opacity: 1;
@@ -5034,7 +5035,24 @@
         margin-bottom: 16px;
         scroll-snap-type: x mandatory;
       }
-       
+      .roo31231{
+        display: grid;
+       margin-top: 16px;
+       margin-bottom: 16px;
+
+        grid-auto-flow: column;
+        margin: auto;
+        box-sizing: border-box;
+       }
+       .carousel {
+        overflow: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+      }
+      
+      .carousel::-webkit-scrollbar {
+        height: 0;
+      }
       @supports (scrollbar-width: none) {
         .roo192 {
           scrollbar-width: none;
