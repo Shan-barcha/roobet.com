@@ -4094,8 +4094,8 @@
                         <span class="roo277">Hidden</span>
                       </td>
                       <td class="roo282 roo58">
-                        <span class="roo277">1:55 AM</span>
-                      </td>
+  <span class="roo277 currentTime"></span>
+</td>
                       <td class="roo282 roo57">
                         <span class="roo277"
                           >$2000.00
@@ -4126,8 +4126,8 @@
                         <span class="roo277">Hidden</span>
                       </td>
                       <td class="roo282 roo58">
-                        <span class="roo277">12:55 AM</span>
-                      </td>
+  <span class="roo277 currentTime"></span>
+</td>
                       <td class="roo282 roo57">
                         <span class="roo277"
                           >$20.00
@@ -4158,8 +4158,8 @@
                         <span class="roo277">Hidden</span>
                       </td>
                       <td class="roo282 roo58">
-                        <span class="roo277">12:55 AM</span>
-                      </td>
+  <span class="roo277 currentTime"></span>
+</td>
                       <td class="roo282 roo57">
                         <span class="roo277"
                           >$111.80
@@ -4196,8 +4196,8 @@
                         >
                       </td>
                       <td class="roo282 roo58">
-                        <span class="roo277">12:55 AM</span>
-                      </td>
+  <span class="roo277 currentTime"></span>
+</td>
                       <td class="roo282 roo57">
                         <span class="roo277"
                           >$250.00
@@ -4234,8 +4234,8 @@
                         >
                       </td>
                       <td class="roo282 roo58">
-                        <span class="roo277">12:55 AM</span>
-                      </td>
+  <span class="roo277 currentTime"></span>
+</td>
                       <td class="roo282 roo57">
                         <span class="roo277"
                           >$3.00
@@ -4272,8 +4272,8 @@
                         >
                       </td>
                       <td class="roo282 roo58">
-                        <span class="roo277">12:55 AM</span>
-                      </td>
+  <span class="roo277 currentTime"></span>
+</td>
                       <td class="roo282 roo57">
                         <span class="roo277"
                           >$5.00
@@ -4304,8 +4304,8 @@
                         <span class="roo277">Hidden</span>
                       </td>
                       <td class="roo282 roo58">
-                        <span class="roo277">12:55 AM</span>
-                      </td>
+  <span class="roo277 currentTime"></span>
+</td>
                       <td class="roo282 roo57">
                         <span class="roo277"
                           >$400.00
@@ -4336,8 +4336,8 @@
                         <span class="roo277">Hidden</span>
                       </td>
                       <td class="roo282 roo58">
-                        <span class="roo277">12:55 AM</span>
-                      </td>
+  <span class="roo277 currentTime"></span>
+</td>
                       <td class="roo282 roo57">
                         <span class="roo277"
                           >$1.00
@@ -4368,8 +4368,8 @@
                         <span class="roo277">Hidden</span>
                       </td>
                       <td class="roo282 roo58">
-                        <span class="roo277">12:55 AM</span>
-                      </td>
+  <span class="roo277 currentTime"></span>
+</td>
                       <td class="roo282 roo57">
                         <span class="roo277"
                           >$800.00
@@ -4400,8 +4400,8 @@
                         <span class="roo277">Hidden</span>
                       </td>
                       <td class="roo282 roo58">
-                        <span class="roo277">12:55 AM</span>
-                      </td>
+  <span class="roo277 currentTime"></span>
+</td>
                       <td class="roo282 roo57">
                         <span class="roo277"
                           >$1.00
@@ -4438,8 +4438,8 @@
                         >
                       </td>
                       <td class="roo282 roo58">
-                        <span class="roo277">12:55 AM</span>
-                      </td>
+  <span class="roo277 currentTime"></span>
+</td>
                       <td class="roo282 roo57">
                         <span class="roo277"
                           >$5.00
@@ -6042,6 +6042,33 @@
 
   // Update the table data every 5 seconds (you can adjust the interval as needed)
   setInterval(updateTableData, 3000);
+</script>
+
+
+<script>
+  // Get all elements with the class "currentTime"
+  var elements = document.querySelectorAll('.currentTime');
+
+  // Iterate over each element and set the current time
+  elements.forEach(function(element) {
+    // Get the current date and time
+    var currentDate = new Date();
+
+    // Get the hours, minutes, and AM/PM
+    var hours = currentDate.getHours();
+    var minutes = currentDate.getMinutes();
+    var ampm = hours >= 12 ? 'PM' : 'AM';
+
+    // Convert hours to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+
+    // Pad single digit minutes with a leading zero
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+
+    // Set the formatted time in the current element
+    element.innerHTML = hours + ':' + minutes + ' ' + ampm;
+  });
 </script>
 
 
