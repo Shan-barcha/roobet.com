@@ -5915,28 +5915,50 @@
     return array[Math.floor(Math.random() * array.length)];
   }
 
+  // function getCurrencySymbolSVG(currency) {
+  //   const img = document.createElement('img');
+  //   img.className = 'roo275';
+
+  //   if (currency.includes('$')) {
+  //   img.src = 'fonts/Cash.b21af8b5c29ed2fc8fcc.svg';
+  // } else if (currency.includes('100.00')) {
+  //     img.alt = 'crypto';
+  //     img.src = 'fonts/BTC.711b31f916ce0bd60736.svg';
+  //   } else {
+  //     img.alt = 'crypto';
+  //     img.src = 'fonts/ETH.9834f5e6bca4dfabeca2.svg';
+  //   }
+
+  //   return img;
+  // }
+
   function getCurrencySymbolSVG(currency) {
-    const img = document.createElement('img');
-    img.className = 'roo275';
+  const img = document.createElement('img');
+  img.className = 'roo275';
+  img.alt = 'currency';
 
-    if (currency.includes('$')) {
-      img.alt = 'cash';
-      img.src = 'fonts/Cash.b21af8b5c29ed2fc8fcc.svg';
-    } else if (currency.includes('BTC')) {
-      img.alt = 'crypto';
-      img.src = 'fonts/BTC.711b31f916ce0bd60736.svg';
-    } else if (currency.includes('ETH')) {
-      img.alt = 'crypto';
-      img.src = 'fonts/ETH.9834f5e6bca4dfabeca2.svg';
-    }
+  const dollarImage = 'fonts/Cash.b21af8b5c29ed2fc8fcc.svg'; // Dollar image
+  const alternativeImages = [
+  img.src = 'fonts/ETH.9834f5e6bca4dfabeca2.svg',
+  img.src = 'fonts/BTC.711b31f916ce0bd60736.svg',
+  ];
 
-    return img;
+  if (currency.includes('$')) {
+    img.src = dollarImage;
+  } else {
+    // Randomly select an alternative image
+    const randomAlternativeImage = alternativeImages[Math.floor(Math.random() * alternativeImages.length)];
+    img.src = randomAlternativeImage;
   }
+
+  return img;
+}
+
 
   function updateTableData() {
     // Sample data for Kullanıcı, Bahis, and Oyun
     const kullaniciData = ['Hidden', 'dice', 'Roulette', 'Tapes', 'Tapes'];
-    const bahisData = ['$100.00', 'ETH1.00', 'BTC0.0000023', '$40.00', 'BTC0.100000.00'];
+    const bahisData = ['$100.00', '1.00', '$23', '40.00', '$10'];
     const oyunData = ['Retro Tapes', 'crash', 'dice', 'Holly Jolly Bonanza', 'Roulette Live'];
 
     // Select all relevant elements in the table
@@ -5962,7 +5984,7 @@
     
   }
 
-  setInterval(updateTableData, 3000);
+  setInterval(updateTableData, 2000);
 </script>
 
 
@@ -6007,7 +6029,7 @@
     });
   }
 
-  setInterval(updateTableData, 5000);
+  setInterval(updateTableData, 6000);
 </script>
 
 
