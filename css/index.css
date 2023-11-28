@@ -2304,6 +2304,9 @@ button {
 .MuiLink-underlineHover:hover {
   text-decoration: underline;
 }
+.roo111:hover {
+  background: rgb(44, 40, 82);
+}
 .MuiLink-underlineAlways {
   text-decoration: underline;
 }
@@ -3631,9 +3634,9 @@ button {
 }
 /* <style data-jss="" data-meta="makeStyles"> */
 .roo65 {
-  padding: 16px;
+  padding: 10px;
   background: #090c1d;
-  margin-top: 32px;
+  margin-top: 12px;
 }
 @media (min-width: 600px) {
   .roo90 {
@@ -5766,7 +5769,7 @@ button {
   flex-direction: column;
   width: 100%;
 
-  padding: 10px 10px 10px 10px;
+  padding: 4px 4px 4px 4px;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
@@ -5802,7 +5805,7 @@ button {
   transform: rotate(180deg);
 }
 .newclass {
-  padding-left: 30px;
+  padding-left: 6px;
 }
 .smootheffect {
   transition: transform 0.3s ease-in-out;
@@ -5910,3 +5913,7 @@ button {
   box-shadow: rgb(80, 39, 167) 0px -3px 0px 0px inset,
     rgb(163, 126, 242) 0px 2px 0px 0px inset;
 }
+
+/* .MuiLink-underlineHover :hover{
+  background-color: #42426f;
+} */

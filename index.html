@@ -77,12 +77,11 @@
                     ><span class="MuiButton-label">Haberler</span></a
                   >
                   <div class="roo34">
-                    <p
-                      class="MuiTypography-root roo35 MuiTypography-body1 MuiTypography-colorTextPrimary"
-                    >
-                      <span class="roo37">3,897,393,807</span
-                      ><span class="roo36">Oynanan Bahisler</span>
+                    <p class="MuiTypography-root roo35 MuiTypography-body1 MuiTypography-colorTextPrimary">
+                      <span class="roo37" id="randomNumber">7,997,793,807</span>
+                      <span class="roo36">Oynanan Bahisler</span>
                     </p>
+                    
                     <button
                       class="MuiButtonBase-root MuiButton-root MuiButton-text roo40 MuiButton-textSizeSmall MuiButton-sizeSmall MuiButton-disableElevation"
                       tabindex="0"
@@ -4486,7 +4485,7 @@
                               Casino
                             </h5>
                           </div>
-                          <div class="arrow-down"> <img src="./fonts/down arrow.svg" alt=""></div>
+                          <div class="arrow-down"> <img src="./fonts/down arrow.svg" alt="" width="14" height="14"></div>
                         </div>
                         <div class="accordion-content MuiList-root">
                           <!-- Add more list items as needed -->
@@ -4572,7 +4571,7 @@
                            Spor Bahisleri Politikası
                             </h5>
                           </div>
-                          <div class="arrow-down"> <img src="./fonts/down arrow.svg" alt=""></div>
+                          <div class="arrow-down"> <img src="./fonts/down arrow.svg" alt="" width="14" height="14"></div>
                         </div>
                         <div class="accordion-content MuiList-root">
                           <!-- Add more list items as needed -->
@@ -4639,7 +4638,7 @@
                               Policies
                             </h5>
                           </div>
-                          <div class="arrow-down"> <img src="./fonts/down arrow.svg" alt=""></div>
+                          <div class="arrow-down"> <img src="./fonts/down arrow.svg" alt="" width="14" height="14"></div>
                         </div>
                         <div class="accordion-content MuiList-root">
                           <!-- Add more list items as needed -->
@@ -4724,7 +4723,7 @@
                              PromosPromos
                             </h5>
                           </div>
-                          <div class="arrow-down"> <img src="./fonts/down arrow.svg" alt=""></div>
+                          <div class="arrow-down"> <img src="./fonts/down arrow.svg" alt="" width="14" height="14"></div>
                         </div>
                         <div class="accordion-content MuiList-root">
                           <!-- Add more list items as needed -->
@@ -4786,7 +4785,7 @@
                             support
                             </h5>
                           </div>
-                          <div class="arrow-down"> <img src="./fonts/down arrow.svg" alt=""></div>
+                          <div class="arrow-down"> <img src="./fonts/down arrow.svg" alt="" width="14" height="14"></div>
                         </div>
                         <div class="accordion-content MuiList-root">
                           <!-- Add more list items as needed -->
@@ -5673,7 +5672,7 @@
                         target="_blank"
                         rel="noreferrer"
                         href="3-x-award-winning-roobet-is-king-of-the-world-at-the-migea-maltas-gaming-excellence-awards.html"
-                        ><div class=" roo110">
+                        ><div class=" roo110 roo111">
                           <img
                             class="roo83"
                             alt="Best Online Casino Product of the Year"
@@ -5684,7 +5683,7 @@
                         target="_blank"
                         rel="noreferrer"
                         href="3-x-award-winning-roobet-is-king-of-the-world-at-the-migea-maltas-gaming-excellence-awards.html"
-                        ><div class=" roo110">
+                        ><div class=" roo110 roo111">
                           <img
                             class="roo83"
                             alt="Best Online Casino Operator of the Year"
@@ -5695,7 +5694,7 @@
                         target="_blank"
                         rel="noreferrer"
                         href="3-x-award-winning-roobet-is-king-of-the-world-at-the-migea-maltas-gaming-excellence-awards.html"
-                        ><div class=" roo110">
+                        ><div class=" roo110 roo111">
                           <img
                             class="roo83"
                             alt="Best Start-Up Company of the Year"
@@ -5711,7 +5710,7 @@
                     Lisanslar
                     </h5>
                     <div class="roo82">
-                      <div class="roo103 roo114">
+                      <div class="roo103 roo114 roo111">
                         <div
                           class="roo84"
                           id="apg-2b4a9aa5-31c9-4186-a6c3-0f53d37328dd"
@@ -5741,7 +5740,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="roo103 roo114">
+                      <div class="roo103 roo114 roo111">
                         <div
                           class="roo84"
                           id="apg-2b4a9aa5-31c9-4186-a6c3-0f53d37328dd"
@@ -5895,6 +5894,29 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
+    <script>
+      function updateRandomNumber() {
+        const randomNumberElement = document.getElementById('randomNumber');
+        const currentNumber = parseInt(randomNumberElement.innerText.replace(/,/g, ''), 10);
+        const newNumber = currentNumber + Math.floor(Math.random() * 1000); // You can adjust the range as needed
+        randomNumberElement.innerText = numberWithCommas(newNumber);
+      }
+    
+      // Function to format numbers with commas
+      function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+    
+      // Update the random number every second (you can adjust the interval as needed)
+      setInterval(updateRandomNumber, 1000);
+    </script>
     <script src="./caurosal.js"></script>
     <script>
       // Add JavaScript here if needed
@@ -5906,5 +5928,125 @@
         });
       });
     </script>
+
+
+
+<script>
+  function getRandomValue(array) {
+    return array[Math.floor(Math.random() * array.length)];
+  }
+
+  function getCurrencySymbolSVG(currency) {
+    const img = document.createElement('img');
+    img.className = 'roo275';
+
+    if (currency.includes('$')) {
+      img.alt = 'cash';
+      img.src = 'fonts/Cash.b21af8b5c29ed2fc8fcc.svg';
+    } else if (currency.includes('BTC')) {
+      img.alt = 'crypto';
+      img.src = 'fonts/BTC.711b31f916ce0bd60736.svg';
+    } else if (currency.includes('ETH')) {
+      img.alt = 'crypto';
+      img.src = 'fonts/ETH.9834f5e6bca4dfabeca2.svg';
+    }
+
+    return img;
+  }
+
+  function updateTableData() {
+    // Sample data for Kullanıcı, Bahis, and Oyun
+    const kullaniciData = ['Hidden', 'dice', 'Roulette', 'Tapes', 'Tapes'];
+    const bahisData = ['$100.00', 'ETH1.00', 'BTC0.0000023', '$40.00', 'BTC0.100000.00'];
+    const oyunData = ['Retro Tapes', 'crash', 'dice', 'Holly Jolly Bonanza', 'Roulette Live'];
+
+    // Select all relevant elements in the table
+    const kullaniciElements = document.querySelectorAll('.roo283 .roo277');
+    const bahisElements = document.querySelectorAll('.roo57 .roo277');
+    const oyunElements = document.querySelectorAll('.roo278 .roo277');
+
+    // Update the content of each element with random data
+    kullaniciElements.forEach(element => {
+      element.textContent = getRandomValue(kullaniciData);
+    });
+
+    bahisElements.forEach(element => {
+      const newBahis = getRandomValue(bahisData);
+      element.innerHTML = `<span>${newBahis}</span>`;
+      element.appendChild(getCurrencySymbolSVG(newBahis));
+    });
+
+    oyunElements.forEach(element => {
+      element.textContent = getRandomValue(oyunData);
+    });
+
+    
+  }
+
+  // Update the table data every 5 seconds (you can adjust the interval as needed)
+  setInterval(updateTableData, 2000);
+</script>
+
+
+
+
+<!-- Your existing HTML code for tabs and table -->
+
+<!-- Add the following script at the end of your body -->
+<script>
+  function getRandomValue(array) {
+    return array[Math.floor(Math.random() * array.length)];
+  }
+
+  function updateTableData() {
+    // Sample data for Kullanıcı, Bahis, and Oyun
+    const kullaniciData = ['Hidden', 'User1', 'User2', 'User3', 'User4'];
+    const bahisData = ['$10.00', '$20.00', '$30.00', '$40.00', '$50.00'];
+    const oyunData = ['Retro Tapes', 'crash', 'dice', 'Holly Jolly Bonanza', 'Roulette Live'];
+
+    // Select all relevant elements in the table
+    const rows = document.querySelectorAll('.roo55 tr');
+
+    rows.forEach(row => {
+      // Get the existing data of each element
+      const previousKullanici = row.querySelector('.roo283 .roo277').textContent;
+      const previousBahis = row.querySelector('.roo57 .roo277').textContent;
+      const previousOyun = row.querySelector('.roo278 .roo277').textContent;
+
+      // Get new random data
+      const newKullanici = getRandomValue(kullaniciData);
+      const newBahis = getRandomValue(bahisData);
+      const newOyun = getRandomValue(oyunData);
+
+      // Update the content of each element with new data
+      row.querySelector('.roo283 .roo277').textContent = newKullanici;
+      row.querySelector('.roo57 .roo277').textContent = newBahis;
+      row.querySelector('.roo278 .roo277').textContent = newOyun;
+
+      // Randomly decide whether to apply background color
+      const applyBackgroundColor = Math.random() < 0.5;
+
+      // Check if the data has changed and apply background color if yes
+      if (
+        (previousKullanici !== newKullanici || previousBahis !== newBahis || previousOyun !== newOyun) &&
+        applyBackgroundColor
+      ) {
+        // Set the background color to the specific color (#353260)
+        row.style.backgroundColor = '#353260';
+      } else {
+        // Reset background color if data hasn't changed or random condition not met
+        row.style.backgroundColor = '';
+      }
+    });
+  }
+
+  // Update the table data every 5 seconds (you can adjust the interval as needed)
+  setInterval(updateTableData, 3000);
+</script>
+
+
+
+
+
   </body>
 </html>
