@@ -5911,22 +5911,31 @@
 
 
 <script>
-  var elements = document.querySelectorAll('.currentTime');
+  function updateCurrentTime() {
+    var elements = document.querySelectorAll('.currentTime');
 
-  elements.forEach(function(element) {
-    var currentDate = new Date();
-    var hours = currentDate.getHours();
-    var minutes = currentDate.getMinutes();
-    var ampm = hours >= 12 ? 'PM' : 'AM';
+    elements.forEach(function(element) {
+      var currentDate = new Date();
+      var hours = currentDate.getHours();
+      var minutes = currentDate.getMinutes();
+      var ampm = hours >= 12 ? 'PM' : 'AM';
 
-    hours = hours % 12;
-    hours = hours ? hours : 12; // the hour '0' should be '12'
+      hours = hours % 12;
+      hours = hours ? hours : 12; // the hour '0' should be '12'
+  
+      minutes = minutes < 10 ? '0' + minutes : minutes;
 
-    minutes = minutes < 10 ? '0' + minutes : minutes;
+      element.innerHTML = hours + ':' + minutes + ' ' + ampm;
+    });
+  }
 
-    element.innerHTML = hours + ':' + minutes + ' ' + ampm;
-  });
+  // Update the time every 1 minute (adjust the interval as needed)
+  setInterval(updateCurrentTime, 6000); // 60000 milliseconds = 1 minute
+
+  // Initial update
+  updateCurrentTime();
 </script>
+
 
 <script>
   function swapRows() {
