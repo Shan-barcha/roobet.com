@@ -2361,6 +2361,13 @@ button {
   width: 100%;
   margin: 0 auto;
   max-width: 1100px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.roo284 {
+  background: #353260;
+  border-radius: 6px;
 }
 .roo51 {
   display: flex;
