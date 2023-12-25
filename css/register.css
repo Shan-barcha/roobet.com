@@ -100,6 +100,7 @@
 .roo1046{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 /* form section start here  */
@@ -111,15 +112,20 @@
 }
 .firstDiv {
     padding: 20px 0px 0px 0px;
-    height: 100%;
     display: flex;
     padding-left: 16px;
     padding-right: 16px;
     flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .loginWrapper{
     display: flex;
     align-items: center;
+   
  
   }
 .heading{
@@ -182,6 +188,9 @@
     .imageDiv{
         display: none;
     }
+    .imageDiv1{
+        display: none;
+    }
     .firstDiv{
         width: 100%;
         
@@ -206,6 +215,16 @@
     background-size: cover;
     width: 50%;
     object-fit: cover;
+    height: 110vh;
+
+  }
+  .imageDiv1{
+    background-image: url(../images/loginimage.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    object-fit: cover;
+    height: 110vh;
 
   }
   /* input labels */
@@ -353,7 +372,8 @@
 .css-1m9pwf3 {
     cursor: inherit;
     position: absolute;
-    opacity: 0;
+    /* opacity: 0; */
+    background:transparent !important;
     width: 100%;
     height: 100%;
     top: 0px;
