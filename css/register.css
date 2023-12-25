@@ -113,8 +113,8 @@
 .firstDiv {
     padding: 20px 0px 0px 0px;
     display: flex;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 22px;
+    padding-right: 22px;
     flex-direction: column;
     min-height: 100vh;
     height: 100%;
@@ -145,6 +145,7 @@
     font-weight: 700 ;
 }
 .login{
+    padding-left: 4px;
     color: #A37EF2;
     font-size: 0.875rem ;
     font-weight: 700 ;
@@ -160,7 +161,7 @@
 }
 @media (min-width: 700px) {
    .formWrapper{
-    width: 400px !important;
+    width: 340px !important;
    }
    .formParent{
     display: flex;
@@ -169,10 +170,14 @@
     align-items: center;
   
    }
+   .roo1037 {
+    width: 189px;
+    height: 49px;
+}
   }
 @media (min-width: 1024px) {
     .innerWrapper{
-     max-width: 417px;
+     max-width: 349px;
     }
     .firstDiv{
       width: 50%;;
@@ -184,6 +189,11 @@
         display: none;
     }
   }
+  @media (min-width: 1280px) {
+    .innerWrapper{
+     width: 349px !important ;
+    }
+}
   @media (max-width: 1023px) {
     .imageDiv{
         display: none;
@@ -304,7 +314,7 @@
     border-color: transparent;
 }
 .gap{
-    padding-top: 16px;
+    padding-top: 12px;
 }
 .css-18mv6zn {
     font-family: Excon, Roboto;
@@ -454,8 +464,8 @@
     left: 10px;
     width: 5px;
     height: 2px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 16px;
+    /* background-color: rgb(255, 255, 255); */
+    /* border-radius: 16px; */
 }
 .css-13y91uw {
     margin: 0px;
@@ -487,20 +497,40 @@
     margin-top: 50px;
     margin-bottom: 10px;
 }
-.css-tqtxkk > #button-text::before {
+/* .css-tqtxkk p#button-text::before {
     content: "Play Now";
     position: absolute;
     -webkit-text-stroke: 2px rgb(197, 106, 24);
     left: 2px;
     z-index: -1;
 }
-.css-tqtxkk > #button-text::after {
+.css-tqtxkk  p#button-text::after {
     content: "Play Now";
     position: absolute;
     -webkit-text-stroke: 2px rgb(197, 106, 24);
     left: 2px;
     top: 3px;
     z-index: -1;
+} */
+#button-text font{
+   
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: 2px rgb(197, 106, 24);
+}
+.roo604 button {
+  position: relative;
+}
+
+#button-text.font {
+  position: relative;
+  z-index: 2;
+  color: white; /* Set the text color */
+  text-shadow:
+    -1px -1px 0 rgb(197, 106, 24),
+    1px -1px 0 rgb(197, 106, 24),
+    -1px 1px 0 rgb(197, 106, 24),
+    1px 1px 0 rgb(197, 106, 24);
 }
 .css-13y91uw {
     margin: 0px;
