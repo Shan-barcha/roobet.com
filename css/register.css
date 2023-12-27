@@ -2,11 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  /* font-family: "Roboto", "Helvetica", "Arial", sans-serif !important; */
 }
 
+@font-face {
+    font-family: 'Excon-Regular';
+    src: url('/Excon_Complete//Fonts//WEB/fonts/Excon-Regular.woff') format('woff');
+    /* font-weight: 800; */
+    font-style: normal;
+  }
+
 .font{
-    font-family: "Roboto", "sans-serif !important";
+    font-family: 'Excon-Regular';
 
 }
 .maindiv {
