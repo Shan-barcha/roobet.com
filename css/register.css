@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", "sans-serif !important";
 }
 .font{
     font-family: "Roboto", "sans-serif !important";
@@ -113,8 +114,8 @@
 .firstDiv {
     padding: 20px 0px 0px 0px;
     display: flex;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 22px;
+    padding-right: 22px;
     flex-direction: column;
     min-height: 100vh;
     height: 100%;
@@ -145,6 +146,7 @@
     font-weight: 700 ;
 }
 .login{
+    padding-left: 4px;
     color: #A37EF2;
     font-size: 0.875rem ;
     font-weight: 700 ;
@@ -160,7 +162,7 @@
 }
 @media (min-width: 700px) {
    .formWrapper{
-    width: 400px !important;
+    width: 340px !important;
    }
    .formParent{
     display: flex;
@@ -169,10 +171,14 @@
     align-items: center;
   
    }
+   .roo1037 {
+    width: 189px;
+    height: 49px;
+}
   }
 @media (min-width: 1024px) {
     .innerWrapper{
-     max-width: 417px;
+     max-width: 349px;
     }
     .firstDiv{
       width: 50%;;
@@ -184,6 +190,11 @@
         display: none;
     }
   }
+  @media (min-width: 1280px) {
+    .innerWrapper{
+     width: 349px !important ;
+    }
+}
   @media (max-width: 1023px) {
     .imageDiv{
         display: none;
@@ -265,10 +276,24 @@
 .css-so2qui:invalid {
     box-shadow: none;
 }
-.MuiOutlinedInput-input:focus {
-    border:2px solid #A37EF2;
+
+.css-so2qui {
+    border: 2px solid transparent !important;
     border-radius: 12px;
 }
+.css-so2qui:hover{
+    border:2px solid #A37EF2 !important;
+    border-radius: 12px;
+}
+.hover1{
+    border: 2px solid transparent !important;
+    border-radius: 12px;
+}
+.hover1:hover{
+    border:2px solid #A37EF2 !important;
+    border-radius: 12px; 
+}
+
 .css-so2qui {
     font: inherit;
     letter-spacing: inherit;
@@ -285,6 +310,35 @@
     animation-duration: 10ms;
     padding: 10px 12px;
     height: 24px;
+    font-weight: 500 !important;
+    color: #7B6CB9 !important;
+}
+.css-so2qui1 {
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentcolor;
+    border: 0px;
+    box-sizing: content-box;
+    background: none;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0px;
+    width: 100%;
+    animation-name: mui-auto-fill-cancel;
+    animation-duration: 10ms;
+    padding: 10px 12px;
+    height: 24px;
+    font-weight: 500 !important;
+    color: #7B6CB9 !important;
+}
+.css-so2qui1::placeholder{
+    font-weight: 500 !important;
+    color: #7B6CB9 !important;
+}
+.css-so2qui::placeholder{
+    font-weight: 500 !important;
+    color: #7B6CB9 !important;
 }
 .css-igs3ac {
     text-align: left;
@@ -304,7 +358,7 @@
     border-color: transparent;
 }
 .gap{
-    padding-top: 16px;
+    padding-top: 12px;
 }
 .css-18mv6zn {
     font-family: Excon, Roboto;
@@ -345,6 +399,7 @@
     font-size: 0.75rem;
     line-height: 1rem;
 }
+
 .css-r8pegv {
     display: inline-flex;
     -webkit-box-align: center;
@@ -362,7 +417,7 @@
     vertical-align: middle;
     appearance: none;
     text-decoration: none;
-    border-radius: 50%;
+    border-radius: 100px;
     color: rgba(0, 0, 0, 0.6);
     padding: 0px;
     margin: 10px;
@@ -372,7 +427,6 @@
 .css-1m9pwf3 {
     cursor: inherit;
     position: absolute;
-    /* opacity: 0; */
     background:transparent !important;
     width: 100%;
     height: 100%;
@@ -381,6 +435,11 @@
     margin: 0px;
     padding: 0px;
     z-index: 1;
+    border: transparent;
+    border-radius: 20px !important;
+}
+input[type="checkbox"] {
+    background-color: red !important;
 }
 .css-ze3sig {
     display: flex;
@@ -392,7 +451,10 @@
     width: 20px;
     -webkit-box-align: center;
     align-items: center;
+   
 }
+
+  
 .roo399 > span {
     margin: 0;
     font-size: 0.75rem;
@@ -454,7 +516,7 @@
     left: 10px;
     width: 5px;
     height: 2px;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     border-radius: 16px;
 }
 .css-13y91uw {
@@ -487,20 +549,26 @@
     margin-top: 50px;
     margin-bottom: 10px;
 }
-.css-tqtxkk > #button-text::before {
-    content: "Play Now";
-    position: absolute;
-    -webkit-text-stroke: 2px rgb(197, 106, 24);
-    left: 2px;
-    z-index: -1;
+
+#button-text font{
+   
+  -webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: 2px rgb(197, 106, 24);
 }
-.css-tqtxkk > #button-text::after {
-    content: "Play Now";
-    position: absolute;
-    -webkit-text-stroke: 2px rgb(197, 106, 24);
-    left: 2px;
-    top: 3px;
-    z-index: -1;
+.roo604 button {
+  position: relative;
+}
+
+#button-text.font {
+  position: relative;
+  z-index: 2;
+  color: white; /* Set the text color */
+  text-shadow:
+    -1px -1px 0 rgb(197, 106, 24),
+    1px -1px 0 rgb(197, 106, 24),
+    -1px 1px 0 rgb(197, 106, 24),
+    1px 1px 0 rgb(197, 106, 24);
 }
 .css-13y91uw {
     margin: 0px;
