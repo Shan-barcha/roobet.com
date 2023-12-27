@@ -2,8 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", "sans-serif !important";
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
 }
+
 .font{
     font-family: "Roboto", "sans-serif !important";
 
