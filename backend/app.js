@@ -11,8 +11,9 @@ const saltRounds = 10;
 // Create MySQL connection pool
 const db = mysql.createPool({
   host: 'localhost',
+  // port:3306,
   user: 'root',
-  // password: '@Incorrect583629',
+  password: '3LCWbsdB7F6GGk8T',
   database: 'UserDB',
 });
 
@@ -100,19 +101,17 @@ app.post('/login', async (req, res) => {
     }
   });
 });
+const users = [
+  { id: 1, name: 'John Doe', age: 25 },
+  { id: 2, name: 'Jane Smith', age: 30 },
+  { id: 3, name: 'Bob Johnson', age: 28 },
+];
 
-app.get('/get-all-users', authenticateToken, (req, res) => {
-  // Retrieve all users from the "users" table
-  const getAllUsersQuery = 'SELECT * FROM users';
-
-  db.query(getAllUsersQuery, (err, result) => {
-    if (err) {
-      console.error('Error fetching users: ', err);
-      return res.status(500).json({ error: 'Internal Server Error' });
-    }
-    res.status(200).json(result);
-  });
+// Define a simple GET endpoint
+app.get('/api/users', (req, res) => {
+  res.json(users);
 });
+
 
 function generateToken(payload) {
   return jwt.sign(payload, secretKey, { expiresIn: '1h' });
@@ -129,6 +128,4 @@ function authenticateToken(req, res, next) {
   });
 }
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+app.listen();
