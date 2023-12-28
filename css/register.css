@@ -281,6 +281,9 @@
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
+.css-so2qui1:focus-visible{
+    outline: none;
+}
 .css-so2qui:invalid {
     box-shadow: none;
 }
