@@ -11,10 +11,10 @@ const saltRounds = 10;
 // Create MySQL connection pool
 const db = mysql.createPool({
   host: 'localhost',
-  // port:3306,
-  user: 'root',
+  //   port:5000,
+  user: 'UserDB',
   password: '3LCWbsdB7F6GGk8T',
-  database: 'UserDB',
+  database: 'userdb',
 });
 
 // Middleware to parse JSON requests
@@ -112,7 +112,6 @@ app.get('/api/users', (req, res) => {
   res.json(users);
 });
 
-
 function generateToken(payload) {
   return jwt.sign(payload, secretKey, { expiresIn: '1h' });
 }
@@ -128,4 +127,6 @@ function authenticateToken(req, res, next) {
   });
 }
 
-app.listen();
+app.listen(port, () => {
+  console.log(`port:${port}`);
+});
