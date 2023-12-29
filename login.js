@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 };
   
                 // Send a POST request to the backend
-                fetch('http://104.248.139.60:5000/login', {
+                fetch('https://roobet818.com/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

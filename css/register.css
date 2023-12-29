@@ -243,9 +243,10 @@
     background-size: cover;
     width: 50%;
     object-fit: cover;
-    height: 110vh;
+    height: 100vh;
 
   }
+ 
   /* input labels */
   .css-oeyxfx{
     display: flex;
