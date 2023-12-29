@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 };
   
                 // Send a POST request to the backend
-                fetch('https://roobet818.com/login', {
+                fetch('https://roobet818.com/api/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         // Check if login was successful
                         if (data.token) {
                             // Show alert for successful login
-                            alert('Login successful! Redirecting to home page in 5 seconds.');
+                            alert('Login successful! Redirecting to home page in seconds.');
 
                             // Redirect to the home page after 5 seconds
                             setTimeout(function () {
