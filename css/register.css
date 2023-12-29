@@ -318,7 +318,7 @@
     display: block;
     min-width: 0px;
     width: 100%;
-    animation-name: mui-auto-fill-cancel;
+    /* animation-name: mui-auto-fill-cancel; */
     animation-duration: 10ms;
     padding: 10px 12px;
     height: 24px;
